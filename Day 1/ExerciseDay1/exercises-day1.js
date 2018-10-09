@@ -65,6 +65,6 @@ function sumOfLowNumbers(num1,num2,num3,num4,num5) {
 //7. Go to https://pages.github.com/ and read through the tutorial to create a Github page.
 // Choose Project site, Start from scratch. When you're finished, link your new project page here.
 
-// Joanna GitHub JS Project Site: https://github.com/joannapuno/JavascriptClass
+// Joanna GitHub JS Project Site:  https://joannapuno.github.io/JavascriptClass/
 
 //8. Commit and push this file to your repository. Submit the URL for Assignment 1 on Brightspace.
