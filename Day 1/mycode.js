@@ -64,3 +64,57 @@ var ans = square(5);
 function name(first, last) {
     return first + ' ' + last;
 }
+
+
+// IF Statements
+var age = 30;
+if(age > 18) {
+    console.log('You may enter!');
+}
+
+// Exercise
+
+var temperature = 30;
+
+// Option 1, one condition
+if(temperature <= -20) {
+    console.log ('Stay inside!!!')
+} else if(temperature <= 0) {
+    console.log('Wear your coat and hat!')
+} else if(temperature <= 10) {
+    console.log('Wear your coat!!!')
+} else {
+    console.log('Wear whatever you want!');
+}
+
+// LOGICAL OPERATORS. 
+// Option 2, comparing conditions
+
+var hasCoat = true;
+var snow = true;
+
+if(temperature <= -20 && hasCoat ) {
+    console.log ('Stay inside!!!')
+} else if(temperature <= 0 || snow) {
+    console.log('Wear your coat and hat!')
+} else if(temperature <= 10) {
+    console.log('Wear your coat!!!')
+} else {
+    console.log('Wear whatever you want!');
+}
+
+// What To Wear Program
+
+var simple = true;
+var formal = false;
+
+if(temperature <= -20 && simple) {
+    console.log ('Long sleeve all the way')
+} else if(temperature <= 0 || formal) {
+    console.log('Trench coat with a long sleeve shirt inside.')
+} else if(temperature <= 10) {
+    console.log('Simple long sleeve with jeans and leather coat.')
+} else {
+    console.log('DRESS!!! WEAR A DRESS!!!!');
+}
+
