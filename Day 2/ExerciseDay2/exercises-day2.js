@@ -84,7 +84,7 @@ console.log(rectArea);
 var circle = {
     cx:34,
     cy:43,
-    radius: numbers[numbers.length - 1]
+    radius: numbers.sort()[numbers.length-1]
 }
 
 console.log(circle);
