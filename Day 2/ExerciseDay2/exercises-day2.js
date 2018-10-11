@@ -67,12 +67,12 @@ console.log(rect.x + ', ' + rect.y);
 //7. Set the rectangle's height to be the square root of its width. Use Math.sqrt()
 //Use *dot notation* to access the properties!
 
-var heightSquared = Math.sqrt(rect.width);
-console.log(heightSquared);
-
-
+rect.height = Math.sqrt(rect.width);
 
 //8. console.log the rectangle's area (width * height). Use *dot notation* to access the properties!
+
+var rectArea = rect.width * rect.height;
+console.log(rectArea);
 
 
 //9. Create a variable `circle` that represents a circle. This should be an object
@@ -81,19 +81,40 @@ console.log(heightSquared);
 //  `cy` of 43, and
 //  `radius` equal to the LAST value in the (sorted) `numbers` array.
 //console.log the circle
+var circle = {
+    cx:34,
+    cy:43,
+    radius: numbers[numbers.length - 1]
+}
+
+console.log(circle);
 
 
 //10. Create an array `shapes` that represents a list of shapes. The array should contain the rectangle and the circle objects defined above.
 //console.log the variable. Be sure to inspect it in the developer console!
+
+var shapes = [rect,circle, "star","square"];
+console.log(shapes);
 
 
 //11. Add a new object to the `shapes` array representing a right triangle.
 //The triangle should have a `base` of 33 and a `height` of 44.
 //console.log the updated shapes array
 
+var rightTriangle = {
+    base: 33,
+    height: 44
+}
+
+shapes.push(rightTriangle);
+console.log(shapes);
 
 //12. Calculate the hypotenuse of the triangle and assign the value to a 'hypotenuse' property inside the triangle object
 //console.log the `shapes` array again.
+
+rightTriangle.hypotenuse = Math.sqrt(Math.pow(rightTriangle['height'], 2) + Math.pow(rightTriangle['base'], 2));
+
+console.log(shapes);
 
 // hypotenuse = the square root of (a^2 + b^2)
 // use the Math.sqrt() function and the .pow() function
