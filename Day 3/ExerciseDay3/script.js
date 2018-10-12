@@ -11,6 +11,7 @@
  mainBody.appendChild(newImage1);
  mainBody.appendChild(newImage2);
  
+ 
  if (Modernizr.geolocation) {
     newImage1.src = 'https://placekitten.com/500/200?random';
     console.log('Location copied! Success!!');
@@ -32,19 +33,32 @@ if(history.length === 1) {
 
 
 var styledHeading = document.getElementById('heading');
-styledHeading.style.color = 'red';
+styledHeading.style.color = 'purple';
+styledHeading.style.fontFamily = 'Helvetica,sans-serif';
+styledHeading.style.fontWeight = '300';
 
-var navContainer = document.getElementById('nav-links');
 
-console.log(singleLink[0]);
+var listItems = document.getElementsByTagName('li');
 
-var singleLink = document.getElementsByTagName('li');
 
-    for(var i =0; i <= singleLink.length; i++){
-        if(i % 2 ===0) {
-            console.log(singleLink[i]);
-        }
+for(var i = 0; i < listItems.length; i++) {
+    var listItem = listItems[i];
+    if(i % 2 ===0) {
+        listItem.style.color = '#fff';
+        listItem.style.fontFamily = 'Helvetica, Arial, sans-serif';
+        listItem.style.fontWeight = '700'; 
     }
+}
+
+
+
+    // for(var i =0; i <= singleLink.length; i++){
+        
+    //     if(i % 2 ===0) {
+    //         singleLink.style.color = 'red';
+            
+    //     }
+    // }
 
 
 
