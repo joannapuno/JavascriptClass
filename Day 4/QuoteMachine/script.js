@@ -5,30 +5,48 @@ var quotes = [
     '"I can\'t go back to yesterday - because I was a different person then.-- Lewis Carroll" ',
     '"People are more difficult to work with than machines. And when you break a person, he can\'t be fixed. -- Rick Riordan"'];
 
-// function quoteChanger() {
-//     for(var i = 0; i < quotes.length; i++) {
-//         console.log(quotes[i]);
-//     }
 
-// }
 
 
 var backButton = document.getElementById('backButton');
 var nextButton = document.getElementById('nextButton');
 
+var counter = 0;
+document.getElementById('quote').innerHTML = quotes[counter];
 
-document.getElementById('quote').innerHTML = quotes[0];
-
-
-var singleQuote = "";
-var i = 1;
-nextButton.addEventListener('click', function(){
-if(i < quotes.length) {
-    singleQuote+=quotes[i++] + "<br>";
+function nextQuote() {
+    if(counter < quotes.length - 1){ 
+        counter++;
+    } else {
+        counter = 0;
+    }
+    document.getElementById('quote').innerHTML = quotes[counter];
 }
-document.getElementById('quote').innerHTML = singleQuote;
 
-});
+nextButton.addEventListener('click', nextQuote);
+
+function backQuote() {
+    if(counter = quotes.length - 1){ 
+        counter--;
+    } else {
+        counter = quotes.length - 1;
+    }
+    document.getElementById('quote').innerHTML = quotes[counter];
+}
+
+backButton.addEventListener('click', backQuote);
+
+
+
+// var singleQuote = "";
+// var i = 0;
+// nextButton.addEventListener('click', function(){
+// if(i < quotes.length) {
+//     singleQuote+=quotes[i++] + "<br>";
+// }
+// document.getElementById('quote').innerHTML = singleQuote;
+
+// });
 
 
 
