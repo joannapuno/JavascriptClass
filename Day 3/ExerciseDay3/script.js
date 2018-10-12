@@ -33,40 +33,20 @@ if(history.length === 1) {
 
 
 var styledHeading = document.getElementById('heading');
-styledHeading.style.color = 'purple';
+styledHeading.style.color = '#FF4500';
 styledHeading.style.fontFamily = 'Helvetica,sans-serif';
 styledHeading.style.fontWeight = '300';
 
 
-var listItems = document.getElementsByTagName('li');
+var listItems = document.getElementsByTagName('a');
 
 
 for(var i = 0; i < listItems.length; i++) {
     var listItem = listItems[i];
     if(i % 2 ===0) {
-        listItem.style.color = '#fff';
+        listItem.style.color = '#FF4500';
         listItem.style.fontFamily = 'Helvetica, Arial, sans-serif';
         listItem.style.fontWeight = '700'; 
+        
     }
 }
-
-
-
-    // for(var i =0; i <= singleLink.length; i++){
-        
-    //     if(i % 2 ===0) {
-    //         singleLink.style.color = 'red';
-            
-    //     }
-    // }
-
-
-
-
-
-
-
-
-
-
-// Style every even nav item differently from the odd nav items.
