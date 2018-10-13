@@ -44,7 +44,7 @@ backButton.addEventListener('click', backQuote);
 
 
 // Timer
-setInterval(nextQuote, 1000);
+setInterval(nextQuote, 3000);
     
 
 // var quoteTimer = setInterval(showQuote, 1000);
