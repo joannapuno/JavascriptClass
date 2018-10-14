@@ -69,14 +69,13 @@ imgArray[4] = new Image();
 imgArray[4].src = './img/rickRiordan.jpg';
 
 function nextImage(){
-    var img = document.getElementById('img-box');
+    var img = document.getElementById('mainImage');
 
-    for(var i = 0; i < imgArray.length;i++)
-    {
-        if(imgArray[i].src == img.src) 
-        {
+    for(var i = 0; i < imgArray.length;i++){
+        if(imgArray[i].src == img.src){
             if(i === imgArray.length){
                 document.getElementById('mainImage').src = imgArray[0].src;
+                
                 break;
             }
             document.getElementById('mainImage').src = imgArray[i+1].src;
