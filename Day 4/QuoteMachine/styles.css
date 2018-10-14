@@ -10,43 +10,42 @@
   .content-box {
     width: 100%;
     min-height: 700px;
-    background: lightgray;
+    /* background: lightgray; */
     display: flex;
     position: relative;
 
 }
 
-  .img-box {
+  #img-box {
       height: 700px;
-      width: 50%;
-      background: pink;
-      background: url(./img/cslewis.jpeg);
-      background-size: cover;
-      background-position-x: -100px;
-      
-      
+      width: 70%;
+      background: grey;
+      position:absolute;
+      z-index: -100;
   }
 
-  .quote-box {
-    height: 700px;
-    width: 70%;
+  #quote-container {
+    width: 60%;
     background: url(./img/yellowPolygon.svg);
     background-size: cover;
     padding: 70px;
-    position: absolute;
-    left: 420px;
+    position: relative;
+    left: 500px;
+    /* background: #FFC400; */
     background-repeat:no-repeat; 
 
   }
 
-.quote-content {
+#quote-content {
+    width: 80%;
     position: absolute;
-    left: 200px;
-    right: 100px;
+    right: 70px;
+    /* background: red; */
 }
 
-  .quote-box p{
+  #quote-container p{
       font-size: 60px;
+      text-align: center;
       font-family: 'Helvetica', sans-serif;
       color: #fff;
   }
