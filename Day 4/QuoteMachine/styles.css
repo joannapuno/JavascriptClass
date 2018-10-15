@@ -19,35 +19,67 @@
   #img-box {
       height: 700px;
       width: 70%;
-      background: grey;
+      /* background: url(./img/BG.jpg); */
+      background-size: cover;
+      background-position-x: -100px;
       position:absolute;
       z-index: -100;
+  }
+
+  #img-box #main-img {
+    height: 100%;
   }
 
   #quote-container {
     width: 60%;
     background: url(./img/yellowPolygon.svg);
     background-size: cover;
-    padding: 70px;
+    padding-top: 10px;
     position: relative;
     left: 500px;
-    /* background: #FFC400; */
+    /* background: pink; */
     background-repeat:no-repeat; 
 
   }
 
-#quote-content {
-    width: 80%;
+  #quote-left {
+    /* background: green; */
+    color: #fff;
+  }
+
+  #quote-right {
+    /* background: green; */
     position: absolute;
-    right: 70px;
-    /* background: red; */
+    right: 0;
+    color: #fff;
+    
+    
+  }
+
+#quote-content {
+    width: 60%;
+    position: absolute;
+    /* right: 130px; */
+    left: 180px;
+    background: red;
+    top: 40px;
 }
 
   #quote-container p{
-      font-size: 60px;
+      font-size: 50px;
       text-align: center;
       font-family: 'Helvetica', sans-serif;
+      font-weight: 400;
       color: #fff;
+  }
+
+  #quote-container #quote-author {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 100;
+    margin-top: 30px;
+    color: #fff;
+    
   }
 
 
@@ -59,7 +91,40 @@
     align-items: baseline;
     justify-content: space-between;
     position: absolute;
-    top: 500px;
+    top: 550px;
+  }
+
+
+#nextButton {
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+#nextButton:hover {
+  color: #222;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+  #nextButton i {
+    margin-left: 10px;
+  }
+
+#backButton {
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+#backButton:hover {
+  color: #FFC400;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+  #backButton i {
+    margin-right: 10px;
   }
 
   
