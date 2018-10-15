@@ -106,25 +106,3 @@ setInterval(nextQuote, 30000);
 //       }
       
 //       setInterval(moveQuote, 30000);
-
-
-    //   #quote-content {
-    //     width: 60%;
-    //     position: absolute;
-    //     /* right: 130px; */
-    //     left: 180px;
-    //     /* background: red; */
-    //     top: 40px;
-    // }
-
-    // #quote-container {
-    //     width: 60%;
-    //     background: url(./img/yellowPolygon.svg);
-    //     background-size: cover;
-    //     padding-top: 10px;
-    //     position: relative;
-    //     left: 500px;
-    //     /* background: pink; */
-    //     background-repeat:no-repeat; 
-    
-    //   }
