@@ -69,7 +69,7 @@ nextButton.addEventListener('click', nextQuote);
 backButton.addEventListener('click', backQuote);
 
 // Quote Timer
-setInterval(nextQuote, 30000);
+setInterval(nextQuote, 3000);
 
 
 
@@ -105,4 +105,7 @@ setInterval(nextQuote, 30000);
 //         }
 //       }
       
-//       setInterval(moveQuote, 30000);
+//       setInterval(moveQuote, 3000);
+
+
+// Element.getBoundingClientRect()
