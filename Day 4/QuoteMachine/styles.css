@@ -10,16 +10,16 @@
   .content-box {
     width: 100%;
     min-height: 700px;
-    /* background: lightgray; */
     display: flex;
     position: relative;
 
 }
 
+/* IMAGE */
+
   #img-box {
       height: 700px;
       width: 70%;
-      /* background: url(./img/BG.jpg); */
       background-size: cover;
       background-position-x: -100px;
       position:absolute;
@@ -30,6 +30,8 @@
     height: 100%;
   }
 
+  /* QUOTE*/
+
   #quote-container {
     width: 60%;
     background: url(./img/yellowPolygon.svg);
@@ -37,18 +39,15 @@
     padding-top: 10px;
     position: relative;
     left: 500px;
-    /* background: pink; */
     background-repeat:no-repeat; 
 
   }
 
   #quote-left {
-    /* background: green; */
     color: #fff;
   }
 
   #quote-right {
-    /* background: green; */
     position: absolute;
     right: 0;
     color: #fff;
@@ -59,10 +58,9 @@
 #quote-content {
     width: 60%;
     position: absolute;
-    /* right: 130px; */
     left: 180px;
-    background: red;
     top: 40px;
+    right: 0;
 }
 
   #quote-container p{
@@ -82,6 +80,7 @@
     
   }
 
+/* BUTTONS */
 
   .buttons {
     height: 200px;

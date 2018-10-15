@@ -69,42 +69,43 @@ nextButton.addEventListener('click', nextQuote);
 backButton.addEventListener('click', backQuote);
 
 // Quote Timer
-setInterval(nextQuote, 3000);
+setInterval(nextQuote, 30000);
 
 
 
 
 
 
-// Animations
+// Animations ---NEED HELP
 
 
-var direction = 0;
 
-      function moveQuote() {
-        var quoteContent = document.getElementById('quote-content');
-        var quoteContainer = document.getElementById('quote-container');
-        var currentLeft = parseInt(quoteContent.style.left);
+// var direction = 0;
+
+//       function moveQuote() {
+//         var quoteContent = document.getElementById('quote-content');
+//         var quoteContainer = document.getElementById('quote-container');
+//         var currentLeft = parseInt(quoteContent.style.left);
         
 
-        if (currentLeft > quoteContainer.width-quoteContent.width) {
-          direction = 0;
+//         if (currentLeft > quoteContainer.width-quoteContent.width) {
+//           direction = 0; 
           
-        }
+//         }
 
-        if (currentLeft <= 0) {
-          direction =+ 1;
+//         if (currentLeft <= 0) {
+//           direction =+ 1;
           
-        }
+//         }
 
-        if (direction) {
-          quoteContent.style.right = (currentLeft + 180) + 'px';
-        } else {
-          quoteContent.style.left = (currentLeft + 180) + 'px';
-        }
-      }
+//         if (direction) {
+//           quoteContent.style.left = (currentLeft - 180) + 'px';
+//         } else {
+//           quoteContent.style.left = (currentLeft + 180) + 'px';
+//         }
+//       }
       
-      setInterval(moveQuote, 3000);
+//       setInterval(moveQuote, 30000);
 
 
     //   #quote-content {
