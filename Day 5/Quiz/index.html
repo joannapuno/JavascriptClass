@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <form action="" name="quiz1">
+        <h1>How are you going to be reincarnated?</h1>
+
+         <!-- General Question -->
+        <label for="name">What is your name?</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="age">How old are you?</label>
+        <input type="number" name="age" id="age" required>
+
+         <!-- Favorite Animal -->
+        <p>What is your favorite animal?</p>
+        
+        <input type="radio" name="favAnimal" id="cat">
+        <label for="cat">Cat</label>
+
+        <input type="radio" name="favAnimal" id="dog">
+        <label for="dog">Dog</label>
+
+        <input type="radio" name="favAnimal" id="snake">
+        <label for="cat">Snake</label>
+
+        <input type="radio" name="favAnimal" id="pig">
+        <label for="pig">Pig</label>
+
+        <input type="radio" name="favAnimal" id="sloth">
+        <label for="sloth">Sloth</label>
+
+        <input type="radio" name="favAnimal" id="hamster">
+        <label for="hamster">Hamster</label>
+
+        <input type="radio" name="favAnimal" id="me">
+        <label for="me">Me,myself, and I. We're all animals</label>
+
+        <!-- What's important to you -->
+        <p>What do you value in your current life? Check all that apply</p>
+        <input type="checkbox" name="important" id="money">
+        <label for="money">Money</label>
+
+        <input type="checkbox" name="important" id="family">
+        <label for="family">Family and Relationships</label>
+
+        <input type="checkbox" name="important" id="family">
+        <label for="family">Career</label>
+
+        <input type="checkbox" name="important" id="family">
+        <label for="family">My well-being</label>
+        
+        <input type="checkbox" name="important" id="family">
+        <label for="family">The earth</label>
+<br />
+<br />
+        <button id="submit" name="submit">Get your Results</button>
+
+        <!-- Error Messages -->
+        <p id="errorName" style="display:none;">Please enter your name</p>
+        <p id="errorAge" style="display:none;">Please enter your age</p>
+
+        <p id="errorAnimal" style="display:none;">Please select an animal</p>
+        <p id="errorValue" style="display:none;">Please select at least one value</p>
+
+    </form>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

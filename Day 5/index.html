@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Subscribe to our Newsletter!</h1>
+    <p>Receive news about events, promos, and more!</p>
+
+    <form action="" name="newsletterForm" id="newsletter">
+
+        <label for="email">Email Address</label>
+        <input type="email" placeholder="enter email address" id="email" name="email">  
+
+        <label for="firstName">First Name</label>
+        <input type="text" placeholder="enter first name" id="firstName" name="first name">  
+
+        <label for="lastName">Last Name</label>
+        <input type="text" placeholder="enter last name" id="lastName" name="last name"> 
+
+        <button name="submit" type="submit" >Subscribe</button> 
+
+        
+
+        <fieldset>
+
+                <!-- Feature creation -->
+                <legend>Choose the feature you want to have</legend>
+                <input type="checkbox" name="feature" id="ears" value="ears" checked required/>
+                <label for="ears">Ears</label>
+            
+                <input type="checkbox" name="feature" id="tail" value="tail"  />
+                <label for="tail">Tail</label>
+                <input type="checkbox" name="feature" id="fur" value="fur"  />
+                <label for="tail">Fur</label>
+
+                <br> 
+                <!-- Min and Max + Required -->
+                <label for="choose">Would you prefer a banana or cherry?</label>
+                <input type="text" id="choose" name = "i_like" pattern="banana|cherry" required minlength="6" maxlength="6">
+                <label for="number">How many would you like to have?</label>
+                <input type="number" id="number" name="amount" value="1" min="1" max="10">
+                <button>Submit</button>
+
+                <!-- Email Validation -->
+                <input type="email" placeholder="email@sait.ca" required pattern=".@sait.ca" size="30" title="Must be a sait email">
+
+
+                
+                
+            </fieldset>
+
+    </form>
+
+    
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

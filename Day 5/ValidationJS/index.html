@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="form1">
+        Please enter the following details;
+
+        <p>
+            Name: <input type="text" id="txtname" name="txtName" />
+        </p>
+
+        <p>
+            Age: <input type="text" id="txtAge" name="txtAge" min="18" />
+        </p>
+
+        <p>
+            <input type="submit" id="submit" value="Submit" name="submit" />
+        </p>
+
+        <!-- Error Messages -->
+        <p id="errorName" style="display:none;">Please enter your name</p>
+        <p id="errorAge" style="display:none;" >Please enter your age</p>
+        <p id="errorTooYoung" style="display:none;" >Must be 18 years old or above</p>
+
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
