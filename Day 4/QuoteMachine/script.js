@@ -99,9 +99,9 @@ setInterval(nextQuote, 30000);
 //         }
 
 //         if (direction) {
-//           quoteContent.style.left = (currentLeft - 180) + 'px';
+//           quoteContent.style.left = (currentLeft - 10) + 'px';
 //         } else {
-//           quoteContent.style.left = (currentLeft + 180) + 'px';
+//           quoteContent.style.left = (currentLeft + 10) + 'px';
 //         }
 //       }
       
