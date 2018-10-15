@@ -98,7 +98,7 @@ var direction = 0;
         }
 
         if (direction) {
-          quoteContent.style.left = (currentLeft - 180) + 'px';
+          quoteContent.style.right = (currentLeft + 180) + 'px';
         } else {
           quoteContent.style.left = (currentLeft + 180) + 'px';
         }
