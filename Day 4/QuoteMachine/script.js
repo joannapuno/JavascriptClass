@@ -73,6 +73,15 @@ setInterval(nextQuote, 30000);
 
 
 
+// Twitter
+var tweet = document.getElementById('twitter-share-button');
+
+tweet.addEventListener('click', function(){
+    var tweetQuote = '"' + quotes[counter] + '"' + " -- " + quoteAuthor[counter];
+    console.log(tweetQuote);
+    tweet.setAttribute('href', 'https://twitter.com/intent/tweet?text= ' + tweetQuote);
+})
+
 
 
 

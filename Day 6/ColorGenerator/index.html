@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="wrapper">
+    <div class="content-box">
+        <h1>Generate a color palette!</h1>
+
+        <div id="boxes">
+
+
+
+        </div>
+        <h5 id="resultMessage">Here is your awesome palette, enjoy!</h5>
+        <form id="colorGenerate">
+            <label for="number">Insert number of colors</label>
+            <input type="number" id="number" max="10" min="1">
+<br />
+            <label for="hue">Insert hue of colors</label>
+            <input type="text" id="hue">
+<br />
+            <label for="luminosity">Insert luminosity</label>
+            <input type="text" id="luminosity">
+<br />
+            <input type="submit" value="Generate">
+        </form>
+
+        <p id="error">Oops! You forgot to fill out the fields. Please fill them out then we can generate your awesome palette.</p>
+
+    </div>
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+     <script>
+             window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+         
+     </script>
+     <script src="script.js"></script>
+</body>
+</html>
