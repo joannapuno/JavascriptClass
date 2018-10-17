@@ -49,7 +49,7 @@ $(document).ready(function(){
     for(var i = 0; i < 10; i++){
       if(counter === 1){
         var counter =$('#number').val();
-        $('#number').attr('value',counter);
+        $('#number').val() = counter;
         
       }
       addBox();    
