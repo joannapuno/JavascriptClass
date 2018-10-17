@@ -1,6 +1,6 @@
 
 
-var colorCube = randomColor({hue: 'red', count: 1});
+
 
 // Validation + Messages
 $(document).ready(function(){
@@ -24,18 +24,46 @@ $(document).ready(function(){
 
     }
   }
+  
 
+
+  function addBox(){
+    $('#boxes').append(document.createElement('div'));
+         $('#boxes div').css({
+                'background-color':'grey',
+                'width':'100px', 
+                'height':'100px',
+                'margin-right': '10px',
+                'margin-bottom': '10px'
+          });
+}
+
+function generateColor(){
+  var counter = 1;
+  var numberBoxes = $('#number').val();
+  for(var i = 0; i = numberBoxes; i++){
+    if(counter === i){
+      addBox();
+    }
+    counter++;
+  }
+}
   $('form').on('submit', function(event) {
     event.preventDefault();
     validateForm();
-
-    console.log($('<input type = "number">'));
-   
+    generateColor()
     });
   });
 
 
+
+
 //   Color
+var colorCube = randomColor();
+
+
+
+
 // appending divs inside #boxes
 
 
@@ -52,14 +80,7 @@ $(document).ready(function(){
 //             }
         
 
-function addBox(){
-    $('#boxes').append(document.createElement('div'));
-         $('#boxes div').css({
-                'background-color':'grey',
-                'width':'100px', 
-                'height':'100px'
- });
-}
+
 
 // function numberColor () {
 //     var numberinput = $('<input type = "number">');
@@ -69,7 +90,12 @@ function addBox(){
 //     }
 // }
 
-
+// $('form').on('button', function(event) {
+  //   event.preventDefault();
+  //   addBox()
+  //   $('#boxes div').css({'background-color': veryRandom});
+  //   });
+  
 
 
  
@@ -86,3 +112,4 @@ function addBox(){
 //     // use to loop through elements
 //     // this* will work
 // })
+
