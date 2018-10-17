@@ -1,6 +1,6 @@
 
 
-
+var colorCube = randomColor();
 
 // Validation + Messages
 $(document).ready(function(){
@@ -25,12 +25,10 @@ $(document).ready(function(){
     }
   }
   
-
-
   function addBox(){
     $('#boxes').append(document.createElement('div'));
          $('#boxes div').css({
-                'background-color':'grey',
+                'background-color':colorCube,
                 'width':'100px', 
                 'height':'100px',
                 'margin-right': '10px',
@@ -38,30 +36,55 @@ $(document).ready(function(){
           });
 }
 
-function generateColor(){
-  var counter = 1;
-  var numberBoxes = $('#number').val();
-  for(var i = 0; i = numberBoxes; i++){
-    if(counter === i){
-      addBox();
-    }
-    counter++;
-  }
-}
+
   $('form').on('submit', function(event) {
     event.preventDefault();
     validateForm();
-    generateColor()
+
+    var hueValue = $('#hue').val();
+    var luminosityValue = $('#luminosity').val();
+    
+    if(hueValue) {
+      console.log('theres a value');
+    }
+
+    if(luminosityValue){
+      console.log('light!');
+    }
+
+
+
+    // addBox();
+    
     });
+
+
   });
 
 
 
 
+
+
+
 //   Color
-var colorCube = randomColor();
 
 
+
+// function generateColor(){
+//   var counter = 1;
+//   var numberBoxes = $('#number').val();
+
+//   for(var i =1; i <= 10 ;i++){
+//     if(counter === i){
+//       // numberBoxes = counter;
+//       addBox() * numberBoxes;
+//     }
+    
+//   }
+    
+    
+//   }
 
 
 // appending divs inside #boxes
