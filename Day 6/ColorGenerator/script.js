@@ -27,9 +27,11 @@ $(document).ready(function(){
   }
   
   function addBox(){
+    var hueValue = $('#hue').val();
+    var luminosityValue = $('#luminosity').val();
     $('#boxes').append(document.createElement('div'));
          $('#boxes div').css({
-                'background-color':colorCube,
+                'background-color':randomColor({hue:'hueValue', luminosity: 'luminosityValue', count:1}),
                 'width':'100px', 
                 'height':'100px',
                 'margin-right': '10px',
@@ -41,9 +43,6 @@ $(document).ready(function(){
   $('form').on('submit', function(event) {
     event.preventDefault();
     validateForm();
-
-    var hueValue = $('#hue').val();
-    var luminosityValue = $('#luminosity').val();
     var colorCube = randomColor();
     var number = $('#number').val();
 
@@ -55,11 +54,6 @@ $(document).ready(function(){
       }
       addBox();    
   }
-
-  if(hueValue && luminosityValue) {
-      console.log(hueValue, luminosityValue);
-  }
-
 
     });
 
