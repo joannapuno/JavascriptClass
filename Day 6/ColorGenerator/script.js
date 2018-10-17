@@ -1,6 +1,7 @@
 
 
 var colorCube = randomColor();
+var color = randomColor({hue: 'red',luminosity: 'light',count: 10});
 
 // Validation + Messages
 $(document).ready(function(){
@@ -43,23 +44,28 @@ $(document).ready(function(){
 
     var hueValue = $('#hue').val();
     var luminosityValue = $('#luminosity').val();
-    
-    if(hueValue) {
-      console.log('theres a value');
-    }
+    var colorCube = randomColor();
+    var number = $('#number').val();
 
-    if(luminosityValue){
-      console.log('light!');
-    }
+    for(var i = 0; i < 10; i++){
+      if(counter === 1){
+        var counter =$('#number').val();
+        $('#number').attr('value',counter);
+        
+      }
+      addBox();    
+  }
+
+  if(hueValue && luminosityValue) {
+      console.log(hueValue, luminosityValue);
+  }
 
 
-
-    // addBox();
-    
     });
 
-
   });
+
+
 
 
 
