@@ -9,29 +9,32 @@
 </head>
 <body>
     <div id="wrapper">
-        <div class="content-box">
+        <div class="content-box">           
+            
 
-                <div class="inputBox">
-                        <h1>Search Lyrics</h1>
-                    
-                        <input type="text" id="searchArtist" placeholder="Artist">
-                        <input type="text" id="searchSong" placeholder="Song">
-                        <input type="submit" value="Get Lyrics" id="submit">
-                   
-                </div>
+            <div class="inputBox">
+                <h1>Song Lyrics Finder</h1>
+                <form>
+                    <input type="text" id="searchArtist" placeholder="Artist">
+                    <input type="text" id="searchSong" placeholder="Song">
+                </form>
+                <input type="submit" value="Get Lyrics" id="submit">
+                <p id="error">Oops! You forgot to fill out the fields. </p>
+            </div>  
             
             <div class="lyricsContainer">
                 <p id="lyrics"></p>
             </div>
-            
-                
-                
-
-                
-            
         </div>
     </div>
 
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+            window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+        
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
