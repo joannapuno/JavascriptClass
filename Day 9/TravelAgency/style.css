@@ -1,0 +1,123 @@
+/* Code by Joanna Puno
+Email: j.puno0909@gmail.com
+10/19/2018
+CPNT 262 -WBD Web Client and Server Programming
+Instructor: Heather Tovery
+JavaScript */
+
+li {
+    list-style: none;
+}
+
+
+
+/* HOME */
+/* Header */
+
+
+.logo-container {
+    background: red;
+    padding: 20px;
+    
+}
+.logo-container i{
+    color: #fff;
+}
+
+#nav-bar {
+    width: 100%;
+    background: pink;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    width: 30%; 
+    display: flex;
+    
+    
+}
+
+.nav-links ul {
+    display: flex;
+    
+}
+
+.nav-links li {
+    margin-right: 10px;
+}
+
+/* Hero */
+
+#hero {
+    width: 100%;
+    height: 600px;
+    background: lightgray;
+}
+
+
+/* Main Body */
+#main-body {
+    min-height: 800px;
+    width: 100%;
+    background: darkgray;
+}
+/* Footer */
+
+
+footer {
+    width: 100%;
+    background: lightgreen;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo {
+    padding: 10px;
+}
+.footer-logo i{
+    color: #fff;
+}
+
+
+.footer-links {
+    width: 30%; 
+    display: flex;
+    
+    
+}
+
+.footer-links ul {
+    display: flex;
+    
+}
+
+.footer-links li {
+    margin-right: 10px;
+}
+
+
+/* CONTACT */
+
+.contact-hero {
+    height: 200px;
+}
+
+
+.contact-us {
+    padding: 30px;
+}
+
+#agents {
+    width: 100%;
+}
+
+.agent-info {
+    width: 100%;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+}
+
