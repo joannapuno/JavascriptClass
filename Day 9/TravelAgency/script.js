@@ -40,10 +40,38 @@ $(agentNames).each(function(i) {
   });
 
 
+//Package Deal
+
+const packageImages = [
+    './img/agents/jem.jpg',
+    './img/agents/jacob.jpg',
+    './img/agents/chloe.jpg'
+];
+
+
+$(packageImages).each(function(i) {
+    let img = ($('.products-content img')[i]);
+    let info = ($('.products-content')[i]);
+        $(info).on({
+        mouseenter: function(){
+            
+            $(img).attr('src',packageImages[i]);
+        },
+        mouseleave: function() {
+        
+            $(img).attr('src','./img/beach.jpg');
+        }
+    })
+});
+
+
+//Flying plane
 
 
 
-
+$('#flying-plane').each(function(i){
+    
+})
 
 
 

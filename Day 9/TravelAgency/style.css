@@ -237,7 +237,7 @@ General
           linear-gradient(to bottom,
               rgba(69, 69, 69, 0.092), 
               rgba(0,0,0,0.0)), 
-          url(../img/hero-background.jpg);
+          url(./img/hero-bg.jpg);
       }
   
       .hero-content {
@@ -439,6 +439,13 @@ General
   
 
   
+
+  /* PLANE */
+
+  #flying-plane {
+      position: absolute;
+      left: 0;
+  }
   
   /* * * * * * * * * * * * * * * * * * * * *
   Contact Page
