@@ -1,3 +1,11 @@
+/* // Code by Joanna Puno
+// Email: j.puno0909@gmail.com
+// 10/19/2018
+// CPNT 262 -WBD Web Client and Server Programming
+// Instructor: Heather Tovery
+// JavaScript */
+
+
 /* * * * * * * * * * * * * * * * * * * * *
 General
 * * * * * * * * * * * * * * * * * * * * */
@@ -26,26 +34,13 @@ General
       list-style: none;
   }
   
-  .parallax-image {
-      position: relative;
-      background-attachment: fixed;
-      height: 80px;
-      color: rgb(110, 110, 110);
-      background-image: 
-      linear-gradient(90deg, 
-              rgba(161, 161, 161, 0.4), 
-              rgba(0,0,0,0.0)), 
-          url(../img/parallax-image.jpg);
-      background-position: 0px 200px;
-      background-size: cover;
-  
-  }
   
   button {
       color: #fff;
       border:none;
       background: #cf1e43;
       padding: 5px 10px;
+      margin-top: 10px;
       
   }
   button a {
@@ -127,10 +122,7 @@ General
   .menu {
       width: 200px;
       opacity: 0.9;
-      background: 
-          linear-gradient(354deg, 
-          #f660e9 0%, 
-          #6056c6 80%);
+      background:#cf1e43;
       height: 60vh;
       position: absolute;
       top: 0;
@@ -219,6 +211,8 @@ General
       background-image:url(./img/hero-bg.jpg);
       background-position: 80% 30%;
       background-size: cover; 
+      
+
   }
   .hero-content {
       padding: 40px 50px;
@@ -228,6 +222,41 @@ General
       margin-left: 80px;  
       background: #fff; 
       opacity: .90; 
+      display: flex;
+      flex-direction: column;
+  }
+
+  .hero-content h1 {
+      margin-bottom: 10px;
+  }
+
+  #hero-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #hero-form label {
+      margin-bottom: 5px;
+      margin-top: 15px;
+  }
+
+  #submitBtn {
+    color: #fff;
+    border:none;
+    background: #cf1e43;
+    padding: 5px 10px;
+    margin: 15px 0;
+
+  }
+
+  #submitBtn a {
+    color: #fff;
+  }
+
+  #submitBtn:hover {
+    cursor: pointer;
+    background: #980021;
+    color: #fff;
   }
   
   
@@ -296,7 +325,7 @@ General
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      margin: 60px;
+      margin: 20px;
       position: relative;
   
   }
@@ -326,19 +355,17 @@ General
 
  .products-box img {
       height: 100%;
-      background: pink;
+      
   }
   
   main .products-box h6 {
-      font-family: 'Playfair Display', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 18px;
       font-weight: 700;
       color: #4d4d4d;
   }
   
-  main .products-box i {
-      color: #6056c6;
-  }
+  
   
   main .products-box p {
       font-family: 'Roboto' sans-serif;
@@ -360,36 +387,52 @@ General
   
   .agent-block {
       padding: 50px;
-      margin: 0px 0px 50px 0px;
+      width: 100%;
+      min-height: 600px;
+      margin: 10px auto;
       
   }
-
-
   
   .agent-content {
-      padding: 50px;
       text-align: center;
-      display: flex;
-      justify-content: space-between;
-      
+      display: flex;  
+      justify-content: space-evenly;
   }
 
   .agent-box {
+      margin-top: 20px;
       display: flex;
       align-items: center;
       flex-direction: column;
+      min-height: 600px;
+     
+  }
+
+  .agent-box p {
+      margin-bottom: 5px;
+  }
+  .agent-box h5 {
+      margin-bottom: 10px;
+  }
+  .agent-box i {
+      margin-right: 10px;
+  }
+  .agent-box button {
+      margin-top: 20px;
   }
 
   
   .img-container {
       width: 300px;
-      height: 300px;
-      margin: 20px auto;  
-
+      height: 100px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      
   }
   
   .img-container img {
-    width: 100%;
+   height: 100%;
+     
   }
   
   @media screen and (max-width: 600px) {
@@ -401,10 +444,6 @@ General
           font-size: 15px;
       }
   
-      .agent-content .paperclip-button {
-          margin-top: 70px;
-      }
-  
   }
   
   @media screen and (max-width: 481px) {
@@ -414,30 +453,64 @@ General
       }
   }
   
-  @media (max-width: 600px) {
-      .products-image-grid {
-          padding: 50px;
-      }
-  }
+  
   
 
 
   /* Register */
 
-  .register-content {
-    padding: 40px 50px;
-    width: 30%;
-    height: 450px;
-    margin-top: 80px;
-    margin-left: 80px;  
-    background: rgb(216, 216, 216); 
+  .register {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .register-content input {
-      margin:5px;
+  .register-content {
+    min-width: 70%;
+    background: rgb(238, 238, 238);
+    padding: 50px;
+  }
+
+  #user-register {
+      display: flex;
+      flex-direction: column;
+  }
+
+  #registerBtn {
+    color: #fff;
+    border:none;
+    background: #cf1e43;
+    padding: 5px 10px;
+    margin: 15px 0;
+
+  }
+
+  #registerBtn a {
+    color: #fff;
+  }
+
+  #registerBtn:hover {
+    cursor: pointer;
+    background: #980021;
+    color: #fff;
+  }
+
+  .register-content label {
+    font-size: 15px;
+    margin: 10px 0 5px 0;
+  }
+  .register-content input, label {
+    margin-bottom: 1px;
+  }
+  .register h2{
+    margin-bottom: 10px;
+  }
+  .register p{
+    margin-bottom: 25px;
+  }
+  .register-content input,p, label {
+    font-family: 'Roboto',sans-serif;
   }
   
 
@@ -483,10 +556,7 @@ General
       font-size: 30px;
       color: #fff;
   }
-  
-  .contact {
-      padding: 50px 10px;
-  }
+
   
   .contact-card {
       min-width: 50%;
@@ -497,7 +567,6 @@ General
       min-width: 100%;
       display: flex;
       flex-direction: column;
-      margin: 0 20px;
   }
   
   .contact-content label {
@@ -514,7 +583,7 @@ General
   }
   
   .contact-content h6 {
-      font-family: 'Playfair Display', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 30px;
       font-weight: 400;
       color: #4d4d4d;
@@ -529,17 +598,8 @@ General
   }
   
   
-  .contact-image {
-      min-width: 50%; 
-      margin-bottom: 30px;
-  }
-  
-  .contact-image img {
-      max-width: 100%;
-  }
-  
   .contact-card button {
-      margin: 20px 35px; 
+      margin: 20px 15px;
   }
   
   @media (max-width:1000px) {
@@ -616,7 +676,7 @@ General
   }
   
   .products-content h6 {
-      font-family: 'Playfair Display', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 18px;
       font-weight: 700;
       color: #4d4d4d;
@@ -672,7 +732,7 @@ General
   }
   
   .subscription-box h6 {
-      font-family: 'Playfair Display', cursive;
+      font-family: 'Roboto',sans-serif;
       font-size: 40px;
      
   }
@@ -709,7 +769,7 @@ General
   
   .img-box {
       width: 50%;
-      background-image: url(./img/img3.jpg);
+      background-image: url(./img/cruise.jpg);
       background-size: cover;
       background-position: center;
       
@@ -821,4 +881,13 @@ General
   }
   
   
+  
+
+  /* Error */
+
+  #error {
+      color: #cf1e43;
+
+  }
+
   

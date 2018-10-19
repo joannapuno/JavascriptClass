@@ -1,3 +1,10 @@
+<!-- // Code by Joanna Puno
+// Email: j.puno0909@gmail.com
+// 10/19/2018
+// CPNT 262 -WBD Web Client and Server Programming
+// Instructor: Heather Tovery
+// JavaScript -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -28,7 +35,7 @@
                      <li><a href="index.html">Home</a></li>
                      <li><a href="products.html">Vacation Packages</a></li>
                      <li><a href="contact.html">Get an Agent</a></li>
-                     <li><a href="contact.html">Register</a></li>
+                     <li><a href="register.html">Register</a></li>
                 </ul>  
                  
         <!-- Mobile Menu -->
@@ -42,21 +49,20 @@
                         <i class="fas fa-times fa-xs"></i>
                     </button>                  
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="products.html">Products</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="products.html">Vacation Packages</a></li>
+                                <li><a href="contact.html">Get an Agent</a></li>
+                                <li><a href="register.html">Register</a></li>
                         </ul>           
                 </div>
             </div>
-                         
-        </header>
                          
         </header>
 
         <!--HERO-->
         <div class="products-hero">
             <div class="products-hero-content">
+                
                     <h2>Vacation Packages</h2>                       
             </div>          
         </div>
@@ -65,55 +71,104 @@
         
         <!-- MAIN CONTENT -->
     <main>
-        <div class="products-block">
-            <h2>Vacation Packages</h2>
-
-            <div class="row">
-                <div class="products-content col-sm-12 col-md-6 col-lg-4">
-                    <img src="./img/resort.jpg" alt="journal"> 
-
-                    <h6>Resort Deals</h6>
-                    <hr>
-                    <p>Save up to $600* at The
-                            Five Azul Beach Resort
-                            Playa del Carmen
-                            with Transat
+            <div class="products-block">
+                    <h2>Pick your <em>Dream-cation</em></h2>
+    
+                    <div class="row">
+                        <div class="products-content col-sm-12 col-md-6 col-lg-4">
+                            <img src="./img/resort.jpg" alt="journal"> 
+    
+                            <h6>Resort Deals</h6>
+                            <hr>
+                            <p>Save up to $600* at The
+                                    Five Azul Beach Resort
+                                    Playa del Carmen
+                                    with Transat
+     
+                            </p> 
+                            <p>Expires October 31, 2018</p> 
+                            <a href="#"><button>View Package Details</button></a>                   
+                        </div>  
+                        <div class="products-content col-sm-12 col-md-6 col-lg-4">
+                            <img src="./img/cruise.jpg" alt="journal"> 
+    
+                            <h6>Cruise Deals</h6>
+                            <hr>
+                            <p>Save up to $300* per couple 
+                                    on cruise or tour packages
+                                    with Flight Centre
+                            </p> 
+                            <p>Expires October 31, 2018</p> 
                             
-                            Expires October 31, 2018
-                    </p> 
-                    <a href="#"><button>View Package Details</button></a>                   
-                </div>  
-                <div class="products-content col-sm-12 col-md-6 col-lg-4">
-                    <img src="./img/cruise.jpg" alt="journal"> 
+                            <a href="#"><button>View Package Details</button></a>                   
+                        </div>  
+                        <div class="products-content col-sm-12 col-md-6 col-lg-4">
+                            <img src="./img/tour.jpg" alt="journal"> 
+    
+                            <h6>Tour Deals</h6>
+                            <hr>
+                            <p>Save 10%* on select Africa
+                                    tours with G Adventures
+    
+                            </p> 
+                            <p>Expires October 31, 2018</p> 
+                            <a href="#"><button>View Package Details</button></a>                   
+                        </div>  
+    
+                        
+                    </div>   
+                </div>
 
-                    <h6>Cruise Deals</h6>
-                    <hr>
-                    <p>Save up to $600* at The
-                            Five Azul Beach Resort
-                            Playa del Carmen
-                            with Transat
-                            
-                            Expires October 31, 2018
-                    </p> 
-                    <a href="#"><button>View Package Details</button></a>                   
-                </div>  
-                <div class="products-content col-sm-12 col-md-6 col-lg-4">
-                    <img src="./img/tour.jpg" alt="journal"> 
+        <div id="flying-plane">
+                <i id="plane" class="fas fa-plane fa-2x"></i>
+        </div>
 
-                    <h6>Tour Deals</h6>
-                    <hr>
-                    <p>Save up to $600* at The
-                            Five Azul Beach Resort
-                            Playa del Carmen
-                            with Transat
-                            
-                            Expires October 31, 2018
-                    </p> 
-                    <a href="#"><button>View Package Details</button></a>                   
-                </div>  
 
-                
-            </div>   
+        <div class="agent-block">
+                    
+            <h2>Get in Touch with Our Agents</h2>
+            <p> Whether you plan on going to a resort, going to Disney, or planning an escape, we are here for you.</p>
+           <div class="agent-content">
+
+                    <div class="agent-box">
+                       <div class="img-container col-sm-12 col-md-10 col-lg-8"><img src="./img/agents/jenna.jpg" alt="notebook and pens"></div>
+                       <h5></h5>
+                       <p><i class="fas fa-phone"></i></p>
+                       <span><i class="far fa-envelope"></i></span>
+                       <button><a href="#">Contact Agent</a></button>
+                       
+                    </div>
+                    <div class="agent-box">
+                       <div class="img-container col-sm-12 col-md-10 col-lg-8"><img src="./img/agents/chloe.jpg" alt="notebook and pens"></div>
+                    
+                       <h5></h5>
+                       <p><i class="fas fa-phone"></i></p>
+                       <span><i class="far fa-envelope"></i></span>
+                       <button><a href="#">Contact Agent</a></button>
+
+
+                       
+                    </div>
+                    <div class="agent-box">
+                       <div class="img-container col-sm-12 col-md-10 col-lg-8"><img src="./img/agents/jacob.jpg" alt="notebook and pens"></div>
+                       <h5></h5>
+                       <p><i class="fas fa-phone"></i></p>
+                       <span><i class="far fa-envelope"></i></span>
+                       <button><a href="#">Contact Agent</a></button>
+                       
+
+                    </div>
+                    <div class="agent-box">
+                       <div class="img-container col-sm-12 col-md-10 col-lg-8"><img src="./img/agents/jem.jpg" alt="notebook and pens"></div>
+                       <h5></h5>
+                       <p><i class="fas fa-phone"></i></p>
+                       <span><i class="far fa-envelope"></i></span>
+                       <button><a href="#">Contact Agent</a></button>
+                       
+                    </div>   
+
+                    
+            </div>
         </div>
     </main>         
 
@@ -123,62 +178,62 @@
        <!-- PRE-FOOTER -->
     
        <div class="pre-footer-wrapper">
-        <div class="subscription-box">
-            <h6>Let's Keep In Touch!</h6>
-            <p>Get news about new products, events, and more!</p>
-                
-            <div class="input-box">
-                <input type="text" name="email" placeholder="Enter Email Address" class="email">
-                <a href="#"><button>Subscribe</button></a>
+            <div class="subscription-box">
+                <h6>Let's Keep In Touch!</h6>
+                <p>Get news about new products, events, and more!</p>
+                    
+                <div class="input-box">
+                    <input type="text" name="email" placeholder="Enter Email Address" class="email">
+                    <a href="#"><button>Subscribe</button></a>
+                </div>
             </div>
+
+            <div class="img-box"></div>
         </div>
 
-        <div class="img-box"></div>
-    </div>
-
+            
+        <!-- FOOTER -->
         
-    <!-- FOOTER -->
-    
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-3 ">
-                    <h2>Travel</h2>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <h2>Connect with Us</h2>
-                        <ul class="social-icons">
-                            <li><a href="#"><i class="fab fa-facebook-f fa-lg"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-twitter fa-lg"></i>  </a></li>
-                            <li><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 ">
+                        <h2>Travel</h2>
+                        <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="products.html">Packages</a></li>
+                                <li><a href="contact.html">Connect with an Agent</a></li>
+                                <li><a href="register.html">Create an Account</a></li>
                         </ul>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <h2>Connect with Us</h2>
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fab fa-facebook-f fa-lg"></i> </a></li>
+                                <li><a href="#"><i class="fab fa-twitter fa-lg"></i>  </a></li>
+                                <li><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                            </ul>
+                    </div>
+
+
+                    <div id="currentDate"></div>
                 </div>
 
 
-                <div id="currentDate"></div>
+                <p>Travel 2018 &copy;</p>
             </div>
-
-
-            <p>Travel 2018 &copy;</p>
-        </div>
-    </footer>
+        </footer>
 
 
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script>
-        window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
-    
-</script>
-<script src="script.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+            window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+        
+    </script>
+    <script src="./script.js"></script>
+    </body>
 </html>

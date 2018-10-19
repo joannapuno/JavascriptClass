@@ -1,3 +1,10 @@
+<!-- // Code by Joanna Puno
+// Email: j.puno0909@gmail.com
+// 10/19/2018
+// CPNT 262 -WBD Web Client and Server Programming
+// Instructor: Heather Tovery
+// JavaScript -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -28,7 +35,7 @@
                      <li><a href="index.html">Home</a></li>
                      <li><a href="products.html">Vacation Packages</a></li>
                      <li><a href="contact.html">Get an Agent</a></li>
-                     <li><a href="contact.html">Register</a></li>
+                     <li><a href="register.html">Register</a></li>
                 </ul>  
                  
         <!-- Mobile Menu -->
@@ -42,10 +49,10 @@
                         <i class="fas fa-times fa-xs"></i>
                     </button>                  
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="products.html">Products</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="products.html">Vacation Packages</a></li>
+                                <li><a href="contact.html">Get an Agent</a></li>
+                                <li><a href="register.html">Register</a></li>
                         </ul>           
                 </div>
             </div>
@@ -54,7 +61,7 @@
 
         <!-- HERO -->
         <div class="hero">
-            <div class="hero-content">
+            <div class="hero-content col-sm-12 col-md-6 col-lg-4">
                 <h1>Book your next Dream-cation Today</h1>
                 <form action="" id="hero-form">
                         <label for="where">Where to?</label>
@@ -65,14 +72,16 @@
         
                         <label for="trip">What kind?</label>
                         <input type="text" id="trip" name="book">
-                        <input type="submit" value="Find Your Agent">
                 </form>  
+                <button id="submitBtn"><a href="contact.html"> Find the your Agent</a></button>
             </div>         
         </div>
         
         <!-- MAIN CONTENT -->
         
         <main>
+
+            
             <div class="products-block">
                 <h2>Vacation Packages</h2>
 
@@ -86,9 +95,9 @@
                                 Five Azul Beach Resort
                                 Playa del Carmen
                                 with Transat
-                                
-                                Expires October 31, 2018
+ 
                         </p> 
+                        <p>Expires October 31, 2018</p> 
                         <a href="#"><button>View Package Details</button></a>                   
                     </div>  
                     <div class="products-content col-sm-12 col-md-6 col-lg-4">
@@ -96,13 +105,12 @@
 
                         <h6>Cruise Deals</h6>
                         <hr>
-                        <p>Save up to $600* at The
-                                Five Azul Beach Resort
-                                Playa del Carmen
-                                with Transat
-                                
-                                Expires October 31, 2018
+                        <p>Save up to $300* per couple 
+                                on cruise or tour packages
+                                with Flight Centre
                         </p> 
+                        <p>Expires October 31, 2018</p> 
+                        
                         <a href="#"><button>View Package Details</button></a>                   
                     </div>  
                     <div class="products-content col-sm-12 col-md-6 col-lg-4">
@@ -110,13 +118,11 @@
 
                         <h6>Tour Deals</h6>
                         <hr>
-                        <p>Save up to $600* at The
-                                Five Azul Beach Resort
-                                Playa del Carmen
-                                with Transat
-                                
-                                Expires October 31, 2018
+                        <p>Save 10%* on select Africa
+                                tours with G Adventures
+
                         </p> 
+                        <p>Expires October 31, 2018</p> 
                         <a href="#"><button>View Package Details</button></a>                   
                     </div>  
 
@@ -125,19 +131,21 @@
             </div>
             <div id="flying-plane">
                 <i id="plane" class="fas fa-plane fa-2x"></i>
-        </div>
+            </div>
 
                 
                <div class="agent-block">
                     
-                    <h2>Meet Our Team</h2>
-                    <p> Whether you plan on going to a resort, going to Disney, or planning an escape, we are here for you.</p>
+                    <h2>Our Team and Who we are</h2>
+                    <p> “ I'm in love with cities I've never been to and people I've never met.” – John Green.</p>
+                    <p>Whether you plan on going to a resort, going to Disney, or planning an escape, we at HOP, will make sure that you will get the best experience.</p>
                    <div class="agent-content">
 
                             <div class="agent-box">
                                <div class="img-container col-sm-12 col-md-10 col-lg-8"><img src="./img/agents/jenna.jpg" alt="notebook and pens"></div>
                                <h5></h5>
                                <p><i class="fas fa-phone"></i></p>
+                               <span><i class="far fa-envelope"></i></span>
                                <button><a href="#">Contact Agent</a></button>
                                
                             </div>
@@ -146,6 +154,7 @@
                             
                                <h5></h5>
                                <p><i class="fas fa-phone"></i></p>
+                               <span><i class="far fa-envelope"></i></span>
                                <button><a href="#">Contact Agent</a></button>
 
 
@@ -155,6 +164,7 @@
                                <div class="img-container col-sm-12 col-md-10 col-lg-8"><img src="./img/agents/jacob.jpg" alt="notebook and pens"></div>
                                <h5></h5>
                                <p><i class="fas fa-phone"></i></p>
+                               <span><i class="far fa-envelope"></i></span>
                                <button><a href="#">Contact Agent</a></button>
                                
 
@@ -163,6 +173,7 @@
                                <div class="img-container col-sm-12 col-md-10 col-lg-8"><img src="./img/agents/jem.jpg" alt="notebook and pens"></div>
                                <h5></h5>
                                <p><i class="fas fa-phone"></i></p>
+                               <span><i class="far fa-envelope"></i></span>
                                <button><a href="#">Contact Agent</a></button>
                                
                             </div>   
@@ -173,38 +184,7 @@
            
 
 
-                <div class="register">
-                        <h2>Create an Account</h2>
-                        <p>Create an account with us so we can...</p>
-                    
-                    <div class="register-content">
-                        
-                        <form action="" id="user-register">
-                            <label for="first-name">First Name</label>
-                            <input type="text" name = 'name' id="first-name">
-
-                            <label for="last-name">Last Name</label>
-                            <input type="text" name = 'name' id="last-name">
-                            
-                            <label for="address">Address</label>
-                            <input type="text" name = 'address' id="address">
-                            
-                            <label for="city">City</label>
-                            <input type="text" name = 'address' id="city">
-
-                            <label for="postal-code">Postal Code</label>
-                            <input type="text" name = 'address' id="postal-code" pattern="T3K 0W1">
-
-                            <label for="email">Email Address</label>
-                            <input type="email" name = 'email' id="email">
-
-                            <label for="phone">Phone Number</label>
-                            <input type="text" name = 'phone' id="phone">
-                        </form>
-
-                        <input type="submit" value="Register">
-                    </div>
-                </div>
+                
            
            
 
@@ -236,9 +216,9 @@
                         <h2>Travel</h2>
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="products.html">Products</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="products.html">Packages</a></li>
+                            <li><a href="contact.html">Connect with an Agent</a></li>
+                            <li><a href="register.html">Create an Account</a></li>
                         </ul>
                     </div>
                     
@@ -269,6 +249,6 @@
             window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
         
     </script>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
     </body>
 </html>
