@@ -43,9 +43,15 @@ $(agentNames).each(function(i) {
 //Package Deal
 
 const packageImages = [
-    './img/agents/jem.jpg',
-    './img/agents/jacob.jpg',
-    './img/agents/chloe.jpg'
+    './img/beach.jpg',
+    './img/cruise2.jpg',
+    './img/tour2.jpg'
+];
+
+const defaultImg = [
+    './img/resort.jpg',
+    './img/cruise.jpg',
+    './img/tour.jpg'
 ];
 
 
@@ -56,22 +62,31 @@ $(packageImages).each(function(i) {
         mouseenter: function(){
             
             $(img).attr('src',packageImages[i]);
+        
         },
         mouseleave: function() {
         
-            $(img).attr('src','./img/beach.jpg');
+            $(img).attr('src',defaultImg[i]);
         }
     })
 });
 
 
 //Flying plane
+$(document).ready(function() {
+    let loopPlane = () => {
+        $('#flying-plane').css({left:0});
+        $('#flying-plane').animate ({
+            left: '+=1400',
+            
+        }, 10000, 'swing', function() {
+            loopPlane();
+        });
+    }
+    loopPlane();
+});
 
 
-
-$('#flying-plane').each(function(i){
-    
-})
 
 
 
