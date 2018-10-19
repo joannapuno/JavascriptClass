@@ -1,117 +1,265 @@
-<!-- Code by Joanna Puno
-Email: j.puno0909@gmail.com
-10/19/2018
-CPNT 262 -WBD Web Client and Server Programming
-Instructor: Heather Tovery
-JavaScript-->
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Travel</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Paperclip</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,700" rel="stylesheet">    
+        <link rel="stylesheet" href="style.css">
+    </head>
 
+    <body>
 
-    <!-- HEADER -->
-    <header>
-        <div id="nav-bar">
-            <div class="logo-container">
-                <i class="far fa-paper-plane"></i>
-                <span>Travel</span>
-            </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Packages</a></li>
-                    <li><a href="#">Register</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+        <!-- HEADER -->
+        <header>    
             
-    <!-- HERO -->
+            <div class="container-fluid d-flex justify-content-between align-items-stretch h-100">
 
-    <div id="hero">
-        <div class="hero-content"></div>
-    </div>
+                <div class="logo d-flex  align-items-center ">
+                    <a href="index.html">
+                        <i class="far fa-paper-plane"></i>
+                        <span>Travel</span>  
+                    </a>                            
+                </div>    
+
+        <!-- Desktop Menu -->
+                <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="products.html">Vacation Packages</a></li>
+                     <li><a href="contact.html">Get an Agent</a></li>
+                     <li><a href="contact.html">Register</a></li>
+                </ul>  
+                 
+        <!-- Mobile Menu -->
+               
+                <button id="hamburger-button">
+                            <i class="fas fa-bars"></i>
+                </button> 
+
+                <div class="menu closed" id="menu">
+                    <button id="close-button">
+                        <i class="fas fa-times fa-xs"></i>
+                    </button>                  
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>           
+                </div>
+            </div>
+                         
+        </header>
+
+        <!-- HERO -->
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Book your next Dream-cation Today</h1>
+                <form action="" id="hero-form">
+                        <label for="where">Where to?</label>
+                        <input type="text" id="where" name="book">
+        
+                        <label for="when">When?</label>
+                        <input type="text" id="when" name="book">
+        
+                        <label for="trip">What kind?</label>
+                        <input type="text" id="trip" name="book">
+                        <input type="submit" value="Find Your Agent">
+                </form>  
+            </div>         
+        </div>
+        
+        <!-- MAIN CONTENT -->
+        
+        <main>
+            <div class="products-block">
+                <h2>Vacation Packages</h2>
+
+                <div class="row">
+                    <div class="products-content col-sm-12 col-md-6 col-lg-4">
+                        <img src="./img/beach.jpg" alt="journal"> 
+
+                        <h6>Resort Deals</h6>
+                        <hr>
+                        <p>Save up to $600* at The
+                                Five Azul Beach Resort
+                                Playa del Carmen
+                                with Transat
+                                
+                                Expires October 31, 2018
+                        </p> 
+                        <a href="#"><button>View More Details</button></a>                   
+                    </div>  
+                    <div class="products-content col-sm-12 col-md-6 col-lg-4">
+                        <img src="./img/beach.jpg" alt="journal"> 
+
+                        <h6>Cruise Deals</h6>
+                        <hr>
+                        <p>Save up to $600* at The
+                                Five Azul Beach Resort
+                                Playa del Carmen
+                                with Transat
+                                
+                                Expires October 31, 2018
+                        </p> 
+                        <a href="#"><button>View More Details</button></a>                   
+                    </div>  
+                    <div class="products-content col-sm-12 col-md-6 col-lg-4">
+                        <img src="./img/beach.jpg" alt="journal"> 
+
+                        <h6>Tour Deals</h6>
+                        <hr>
+                        <p>Save up to $600* at The
+                                Five Azul Beach Resort
+                                Playa del Carmen
+                                with Transat
+                                
+                                Expires October 31, 2018
+                        </p> 
+                        <a href="#"><button>View More Details</button></a>                   
+                    </div>  
+
+                    
+                </div>   
+            </div>
+
+                
+               <div class="agent-block">
+                    
+                    <h2>Meet Our Team</h2>
+                    <p> Whether you plan on going to a resort, going to Disney, or planning an escape, we are here for you.</p>
+                   <div class="agent-content">
+
+                            <div class="agent-box">
+                               <div class="img-container col-sm-12 col-md-10 col-lg-8"><img src="./img/agents/jenna.jpg" alt="notebook and pens"></div>
+                               <h5></h5>
+                               <p><i class="fas fa-phone"></i></p>
+                               
+                            </div>
+                            <div class="agent-box">
+                               <div class="img-container col-sm-12 col-md-10 col-lg-8"><img src="./img/agents/chloe.jpg" alt="notebook and pens"></div>
+                            
+                               <h5></h5>
+                               <p><i class="fas fa-phone"></i></p>
 
 
+                               
+                            </div>
+                            <div class="agent-box">
+                               <div class="img-container col-sm-12 col-md-10 col-lg-8"><img src="./img/agents/jacob.jpg" alt="notebook and pens"></div>
+                               <h5></h5>
+                               <p><i class="fas fa-phone"></i></p>
+                               
+
+                            </div>
+                            <div class="agent-box">
+                               <div class="img-container col-sm-12 col-md-10 col-lg-8"><img src="./img/agents/jem.jpg" alt="notebook and pens"></div>
+                               <h5></h5>
+                               <p><i class="fas fa-phone"></i></p>
+                               
+                            </div>                                 
+                    </div>
+                </div>
+           
 
 
+                <div class="register">
+                        <h2>Create an Account</h2>
+                        <p>Create an account with us so we can...</p>
+                    
+                    <div class="register-content">
+                        
+                        <form action="" id="user-register">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name = 'name' id="first-name">
 
-    <!-- MAIN BODY -->
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name = 'name' id="last-name">
+                            
+                            <label for="address">Address</label>
+                            <input type="text" name = 'address' id="address">
+                            
+                            <label for="city">City</label>
+                            <input type="text" name = 'address' id="city">
 
-<div id="main-body">
-    <div class="main-container"></div>
+                            <label for="postal-code">Postal Code</label>
+                            <input type="text" name = 'address' id="postal-code" pattern="T3K 0W1">
+
+                            <label for="email">Email Address</label>
+                            <input type="email" name = 'email' id="email">
+
+                            <label for="phone">Phone Number</label>
+                            <input type="text" name = 'phone' id="phone">
+                        </form>
+
+                        <input type="submit" value="Register">
+                    </div>
+                </div>
+           
+           
+
     
 
-<div class="register">
-    <form action="" id="user-register">
-        <input type="text" name = 'name' id="first-name" placeholder="Enter First Name">
-        <input type="text" name = 'name' id="last-name" placeholder="Enter Last Name">
-        <input type="text" name = 'address' id="address" placeholder="Enter Address">
-        <input type="text" name = 'address' id="city" placeholder="Enter City">
-        <input type="text" name = 'address' id="postal-code" placeholder="Enter Postal Code" pattern="T3K 0W1">
-        <input type="email" name = 'email' id="email" placeholder="Enter Email Address">
-        <input type="text" name = 'phone' id="phone" placeholder="Enter Phone Number">
-        <input type="submit" value="Submit">
-    </form>
-</div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-content">
-            <div id="currentDate"></div>
-
-            <div class="footer-logo">
-                <i class="far fa-paper-plane"></i>
-                <span>Travel</span>
+       <!-- PRE-FOOTER -->
+    
+       <div class="pre-footer-wrapper">
+            <div class="subscription-box">
+                <h6>Let's Keep In Touch!</h6>
+                <p>Get news about new products, events, and more!</p>
+                    
+                <div class="input-box">
+                    <input type="text" name="email" placeholder="Enter Email Address" class="email">
+                    <a href="#"><button>Subscribe</button></a>
+                </div>
             </div>
 
-
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Packages</a></li>
-                        <li><a href="#">Register</a></li>
-                    </ul>
-                </div>
+            <div class="img-box"></div>
         </div>
-    </footer>
+
+            
+        <!-- FOOTER -->
+        
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 ">
+                        <h2>Travel</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <h2>Connect with Us</h2>
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fab fa-facebook-f fa-lg"></i> </a></li>
+                                <li><a href="#"><i class="fab fa-twitter fa-lg"></i>  </a></li>
+                                <li><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                            </ul>
+                    </div>
+
+
+                    <div id="currentDate"></div>
+                </div>
+
+
+                <p>Travel 2018 &copy;</p>
+            </div>
+        </footer>
 
 
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script>
-        window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
-    
-</script>
+    <script>
+            window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+        
+    </script>
     <script src="script.js"></script>
-</body>
+    </body>
 </html>

@@ -6,25 +6,44 @@
 // JavaScript
 
 
-//for contact page, just do what heather said no object
+// Mobile Menu
+
+var button = document.querySelector('#hamburger-button')
+var menu = document.querySelector('#menu')
+var closeButton = document.querySelector('#close-button')
+
+function openMenu() {
+    menu.className = 'menu'
+}
+
+function closeMenu() {
+    menu.className = 'menu closed'
+}
 
 
-// Current Day
+button.addEventListener('click', openMenu)
+closeButton.addEventListener('click', closeMenu)
+
+
+
+// Footer Current Date
 let currentDate = new Date();
 $('#currentDate').html(currentDate);
 
 // Contact Agents
-const agentNames = ['Jane Doe', 'John Smith','Joeee Smith'];
-const agentPhone = ['403-555-7777','403-555-7777','403-555-7777'];
+const agentNames = ['Jenna Garcia', 'Chloe Smith','Jacob Asper','Jem Puno'];
+const agentPhone = ['403-535-7297','403-555-7357','403-555-5477','403-555-7677'];
 
-//change this to loop!!!
-for(const value of agentNames) {
-    $('.agent-info').append("<p>" + value +"</p>");
-}
-for(const value of agentPhone) {
-    $('.agent-info').append("<p>" + value +"</p>");
-    
-}
+$(agentNames).each(function(i) {
+    $('h5')[i].append(agentNames[i]);
+    $('.agent-box p')[i].append(agentPhone[i]);
+  });
+
+
+
+
+
+
 
 
 
