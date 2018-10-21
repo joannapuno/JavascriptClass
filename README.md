@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+# Welcome!
 
-You can use the [editor on GitHub](https://github.com/joannapuno/JavascriptClass/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Hello awesome human being(or..alien?) and thank you for taking the time to view my repos!
+As you can see, most of my projects are coming from my classes here at SAIT.
+That’s because I am still a student and I am learning lots of things! I am loving this course so far and there are so many things I want to learn. I will be coming back to clean up my code after this program and see what else I can do to make my projects better.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Breakdown of my projects 
 
-```markdown
-Syntax highlighted code block
+This is the Javascript module. Javascript is definitely more challenging than my former classes but I love how much freedom I get with it. I can do so much and it really brings my webpages to life.
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+### What I've used in this module
+```
+* Vanilla Javascript
+* Manipulating the DOM
+* Window Object, Location Object, Navigator Object
+* If/Else if Statements
+* Loops
+* Functions
+* Animations
+* JQuery
+```
+### But wait, there's more!
+```
+* Ajax
+* Creating Jason objects
+* Working with APIs
+* Fetching data 
+* Regular Expressions
+* Local Storage (Setting, getting, and removing data)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### In conclusion
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/joannapuno/JavascriptClass/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+My favorite part of this module was being able to create actions and animations to my design. I see my design moving and interacting with my actions and that's amazing. I also enjoyed learning jQuery and how it made my code look cleaner and even now, I am using jquery! I go back to using Vanilla JS for things that are a bit more complicated where I have to break things down first to understand what is going on.
