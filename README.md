@@ -32,7 +32,7 @@ This is the Javascript module. Javascript is definitely more challenging than my
 ```
 ### How I solved conflicts and challenges
 Google is my bestfriend along with the console.
-If Google can't solve my problems, I turn to my awesome colleagues
+If Google can't solve my problems, I turn to my awesome colleagues!
 I usually log things out first on my console when something isn't working. Stepping away from my monitor helps too and taking a quick walk helps clear my mind.
 
 
