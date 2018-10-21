@@ -19,7 +19,7 @@ This is the Javascript module. Javascript is definitely more challenging than my
 * Loops
 * Functions
 * Animations
-* JQuery
+* jQuery
 ```
 ###### But wait, there's more!
 ```
@@ -33,4 +33,4 @@ This is the Javascript module. Javascript is definitely more challenging than my
 
 ### In conclusion
 
-My favorite part of this module was being able to create actions and animations to my design. I see my design moving and interacting with my actions and that's amazing. I also enjoyed learning jQuery and how it made my code look cleaner and even now, I am using jquery! I go back to using Vanilla JS for things that are a bit more complicated where I have to break things down first to understand what is going on.
+My favorite part of this module was being able to create actions and animations to my design. I see my design moving and interacting with my actions and that's amazing. I also enjoyed learning jQuery and how it made my code look cleaner and even now, I am using jQuery! I go back to using Vanilla JS for things that are a bit more complicated where I have to break things down first to understand what is going on.
