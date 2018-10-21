@@ -6,11 +6,11 @@ As you can see, most of my projects are coming from my classes here at SAIT.
 That’s because I am still a student and I am learning lots of things! I am loving this course so far and there are so many things I want to learn. I will be coming back to clean up my code after this program and see what else I can do to make my projects better.
 
 
-### Breakdown of my projects 
+###### Breakdown of my projects 
 
 This is the Javascript module. Javascript is definitely more challenging than my former classes but I love how much freedom I get with it. I can do so much and it really brings my webpages to life.
 
-### What I've used in this module
+###### What I've used in this module
 ```
 * Vanilla Javascript
 * Manipulating the DOM
@@ -21,7 +21,7 @@ This is the Javascript module. Javascript is definitely more challenging than my
 * Animations
 * JQuery
 ```
-### But wait, there's more!
+###### But wait, there's more!
 ```
 * Ajax
 * Creating Jason objects
