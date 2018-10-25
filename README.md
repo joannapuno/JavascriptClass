@@ -24,7 +24,7 @@ This is the Javascript module. Javascript is definitely more challenging than my
 ###### But wait, there's more!
 ```
 * Ajax
-* Creating Jason objects
+* Creating Json objects
 * Working with APIs
 * Fetching data 
 * Regular Expressions
